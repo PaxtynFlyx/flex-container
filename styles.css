@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 10px 10px;
+}
+
+.flex-container {
+    display: flex;
+    /* Set to either column or row*/
+    flex-direction: row;
+    background-color: white;
+    margin: 10px 10px;
+    border: 2px solid black;
+}
+
+.flex-wrap-container {
+    display: flex;
+    /*Try to set flex-wrap to these: wrap, nowrap, wrap-reverse*/
+    /* flex-wrap: wrap;  */
+    /*Shorthand property for flex-direction & flex-wrap. Syntax: flex-flow: (flex-direction) (flex-wrap)*/
+    flex-flow: row wrap;
+    background-color: white;
+    margin: 10px 10px;
+    border: 2px solid black;
+}
+
+.flex-container-justify-content-centered {
+    display: flex;
+    /* Set flex-direction to either column or row*/
+    flex-direction: row;
+    /*
+    justify-content: center is used to center flex items along the "main axis" of the flex container.
+    The main axis is defined by the flex-direction. In which in this case, it is defined as row.
+    So it would be horizontally centered.
+    */
+    justify-content: center; /* values: center, flex-start, flex-end, space-around, space-between*/
+    background-color: white;
+    margin: 10px 10px;
+    border: 2px solid black;
+}
+
+.flex-container-align-items-centered {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    justify-content: center; /*Main axis (Horizontally)*/
+    align-items: center; /*Cross axis (Vertically)| flex-start, flex-end, stretch, baseline*/
+    /* align-content: stretch; */
+    background-color: white;
+    margin: 10px 10px;
+    border: 2px solid black;
+}
+
+.flex-container > div, 
+.flex-wrap-container > div, 
+.flex-container-justify-content-centered > div,
+.flex-container-align-items-centered > div {
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
